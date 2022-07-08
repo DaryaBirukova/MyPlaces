@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--My Places-->
         <scene sceneID="PpX-Tv-x4x">
             <objects>
                 <tableViewController id="NXe-Jf-9qW" customClass="MainViewController" customModule="MyPlaces" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,7 +30,7 @@
                             <outlet property="delegate" destination="NXe-Jf-9qW" id="YkI-hR-7OO"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="GGl-Pq-IuA"/>
+                    <navigationItem key="navigationItem" title="My Places" id="GGl-Pq-IuA"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BFZ-Yd-EYW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,6 +43,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hzl-0P-Qac">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="NXe-Jf-9qW" kind="relationship" relationship="rootViewController" id="Lmn-Ml-fsB"/>
